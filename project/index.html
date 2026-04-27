@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Princess Ivy | Projects</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <main class="projects-wrapper">
+        <nav class="project-nav">
+            <a href="#">HOME</a>
+            <a href="#">ABOUT ME</a>
+            <a href="#" class="active">PROJECTS</a>
+            <a href="#">CONTACTS</a>
+        </nav>
+
+        <section class="project-list">
+            <article class="project-card">
+                <div class="project-card-inner">
+                    <div class="project-copy">
+                        <span class="project-label">Unique Coffee Beans</span>
+                        <h2 class="project-title">Unique Coffee Beans</h2>
+                        <p class="project-description">This design focuses on creating a strong visual impact by using a clean layout and a consistent color theme, mainly green and white. The main highlight is the product image placed on the right side, which immediately draws attention. On the left, the large bold text emphasizes the message, making it clear and easy to read.</p>
+                    </div>
+
+                    <div class="project-preview">
+                        <div class="preview-window">
+                            <img src="assets/coffee.jpg" alt="Unique Coffee Beans project preview">
+                        </div>
+                        <div class="carousel-controls">
+                            <button class="arrow" aria-label="Previous project">❮</button>
+                            <button class="arrow" aria-label="Next project">❯</button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-card-inner">
+                    <div class="project-copy">
+                        <span class="project-label">Starbucks Website</span>
+                        <h2 class="project-title">Starbucks Website</h2>
+                        <p class="project-description">This design uses a warm color palette with brown and orange tones to match the theme of coffee. The large coffee bean in the center acts as the focal point, which makes the design visually engaging. The use of shadows and lighting adds depth, giving it a more modern and slightly 3D appearance.</p>
+                    </div>
+
+                    <div class="project-preview">
+                        <div class="preview-window">
+                            <img src="assets/starbucks.jpg" alt="Starbucks website project preview">
+                        </div>
+                        <div class="carousel-controls">
+                            <button class="arrow" aria-label="Previous project">❮</button>
+                            <button class="arrow" aria-label="Next project">❯</button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-card-inner">
+                    <div class="project-copy">
+                        <span class="project-label">Venture Studio</span>
+                        <h2 class="project-title">Venture Studio</h2>
+                        <p class="project-description">This type of website design usually focuses on professionalism and clarity. It often uses clean layouts, neutral or modern color schemes, and structured sections to present information about services, projects, and goals.</p>
+                    </div>
+
+                    <div class="project-preview">
+                        <div class="preview-window">
+                            <img src="assets/venture.jpg" alt="Venture studio project preview">
+                        </div>
+                        <div class="carousel-controls">
+                            <button class="arrow" aria-label="Previous project">❮</button>
+                            <button class="arrow" aria-label="Next project">❯</button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-card-inner">
+                    <div class="project-copy">
+                        <span class="project-label">Car Website (Audi R8)</span>
+                        <h2 class="project-title">Car Website (Audi R8)</h2>
+                        <p class="project-description">This design highlights a premium product by using a large background image of the car. The layout is minimal, allowing the image to stand out without too many distractions. The text is placed strategically so it does not block important parts of the image.</p>
+                    </div>
+
+                    <div class="project-preview">
+                        <div class="preview-window">
+                            <img src="assets/car.jpg" alt="Car website Audi R8 project preview">
+                        </div>
+                        <div class="carousel-controls">
+                            <button class="arrow" aria-label="Previous project">❮</button>
+                            <button class="arrow" aria-label="Next project">❯</button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <footer class="footer-tag">2026–2027</footer>
+    </main>
+
+    <script>
+      const cards = Array.from(document.querySelectorAll('.project-card'));
+      let currentIndex = 0;
+
+      function showCard(index) {
+        const normalizedIndex = (index + cards.length) % cards.length;
+        cards.forEach((card, i) => {
+          card.classList.toggle('active', i === normalizedIndex);
+        });
+        currentIndex = normalizedIndex;
+      }
+
+      document.querySelectorAll('.arrow').forEach(button => {
+        button.addEventListener('click', () => {
+          const direction = button.textContent.trim() === '❮' ? -1 : 1;
+          showCard(currentIndex + direction);
+        });
+      });
+
+      showCard(0);
+    </script>
+</body>
+</html>
