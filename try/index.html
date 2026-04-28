@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redline Portfolio | Ivy</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Great+Vibes&family=Instrument+Serif:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- radios moved here so CSS can toggle slides without JS; inputs are hidden and don't affect layout -->
+    <input type="radio" name="nav" id="nav-home" checked hidden>
+    <input type="radio" name="nav" id="nav-about" hidden>
+    <input type="radio" name="nav" id="nav-projects" hidden>
+    <input type="radio" name="nav" id="nav-contacts" hidden>
+    <header class="main-header">
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="assets/logo.png" alt="Logo" class="brand-logo">
+            </div>
+
+            <nav class="nav-control">
+                <div class="control-panel-pill">
+                    <div class="nav-selection-slider"></div>
+                    <label for="nav-home">HOME</label>
+                    <label for="nav-about">ABOUT ME</label>
+                    <label for="nav-projects">PROJECTS</label>
+                    <label for="nav-contacts">CONTACTS</label>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="hero">
+        <div class="tagline-frame-left">
+            <span class="tagline">"Clean Code Starts Here"</span>
+        </div>
+
+        <!-- Slides container: each .slide is scoped so styles won't leak between slides -->
+        <div class="slides">
+            <section class="slide slide-home" aria-label="Home slide">
+                <div class="hero-absolute-left">
+                    <div class="hero-text-content">
+                        <h1 class="name-display">Hi! Ivy Here!</h1>
+                        <div class="role-container-right">
+                            <h2 class="role-subtitle">Full-Stack Web Developer</h2>
+                        </div>
+                        <p class="bio-text">
+                            I'm a web developer focused on building modern, responsive, and user-friendly applications. 
+                            I work with both front-end and back-end technologies to create seamless digital experiences.
+                        </p>
+                        <div class="hero-btns">
+                            <button class="btn-contact">Contact Us</button>
+                            <button class="btn-learn">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="slide slide-about" aria-label="About slide">
+                <div class="hero-absolute-left">
+                    <div class="hero-text-content">
+                        <h2>About Me</h2>
+                        <p class="bio-text">Short about content. Replace with your full about section or partial file.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="slide slide-projects" aria-label="Projects slide">
+                <div class="hero-absolute-left">
+                    <div class="hero-text-content">
+                        <h2>Projects</h2>
+                        <p class="bio-text">Project cards or links go here.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="slide slide-contacts" aria-label="Contacts slide">
+                <div class="hero-absolute-left">
+                    <div class="hero-text-content">
+                        <h2>Contact</h2>
+                        <p class="bio-text">Contact info, form, or links.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-bar">
+            <span class="footer-brand">redline</span>
+            <span class="footer-date">2026-2027</span>
+        </div>
+</footer>
+
+</body>
+</html>

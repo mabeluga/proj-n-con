@@ -1,0 +1,5 @@
+.slide-root { position: absolute; inset: 0; display: flex; align-items: flex-start; padding: 60px; }
+.slide-root .hero-text-content { background: rgba(255,255,255,0.03); border-radius: 30px; padding: 30px; border: 1px solid rgba(255,255,255,0.08); }
+.slide-root .name-display { font-family: 'Great Vibes', cursive; font-size: 4.2rem; color: var(--tagline-gold); margin: 0; }
+.slide-root .role-subtitle { font-family: 'Instrument Serif', serif; color: var(--role-dark); font-size: 1.8rem; }
+.slide-root .bio-text { color: rgba(255,255,255,0.95); }

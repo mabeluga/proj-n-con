@@ -1,0 +1,32 @@
+:root{
+  --bg:#ffffff; --muted:#6b7280; --primary:#2563eb; --danger:#dc2626; --border:#e5e7eb; --radius:8px;
+}
+body{font-family:Inter,Segoe UI,Arial,sans-serif;color:#111;background:var(--bg)}
+.controls{padding:24px;max-width:980px;margin:0 auto}
+.controls h2{font-size:16px;margin:18px 0;color:#111}
+.row{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.form-row label{display:flex;flex-direction:column;gap:6px;min-width:220px}
+input[type=text],input[type=email],input[type=password],input[type=search],textarea,select{padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;background:#fff}
+select{appearance:none}
+.btn{padding:8px 14px;border-radius:8px;border:1px solid var(--border);background:#f8fafc;cursor:pointer}
+.btn-primary{background:var(--primary);color:#fff;border:none}
+.btn-secondary{background:#0ea5a4;color:#fff;border:none}
+.btn-ghost{background:transparent;border:1px solid var(--border)}
+.btn-danger{background:var(--danger);color:#fff;border:none}
+.checkbox,input[type=checkbox]{display:inline-flex;align-items:center}
+.radio{display:inline-flex;align-items:center}
+.switch{position:relative;display:inline-block;width:46px;height:28px}
+.switch input{opacity:0;width:0;height:0}
+.slider{position:absolute;cursor:pointer;top:3px;left:3px;right:3px;bottom:3px;background:#e5e7eb;border-radius:999px;transition:.18s}
+.slider:before{content:"";position:absolute;height:20px;width:20px;left:4px;top:4px;background:#fff;border-radius:50%;box-shadow:0 1px 3px rgba(0,0,0,.12);transition:.18s}
+.switch input:checked + .slider{background:var(--primary)}
+.switch input:checked + .slider:before{transform:translateX(18px)}
+input[type=range]{width:220px}
+.badge{display:inline-block;padding:4px 8px;border-radius:6px;background:#111;color:#fff;font-size:12px}
+.badge-soft{background:#f3f4f6;color:#111}
+.pill{padding:6px 10px;border-radius:999px;background:#eef2ff;color:#2563eb}
+.cards{display:flex;gap:12px;margin-top:12px}
+.card{border:1px solid var(--border);padding:14px;border-radius:10px;width:320px;background:#fff}
+.card h3{margin:0 0 8px 0}
+.card p{margin:0 0 12px 0;color:var(--muted);font-size:14px}
+.card-actions{display:flex;gap:8px}
