@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redline Portfolio | Ivy</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Great+Vibes&family=Instrument+Serif:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- radios moved here so CSS can toggle the home slide without JS; inputs are hidden and don't affect layout -->
+    <input type="radio" name="nav" id="nav-home" checked hidden>
+    <header class="main-header">
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="assets/logo.png" alt="Logo" class="brand-logo">
+            </div>
+
+            <nav class="nav-control">
+                <div class="control-panel-pill">
+                    <div class="nav-selection-slider"></div>
+                    <label for="nav-home">HOME</label>
+                    <a href="about.html">ABOUT ME</a>
+                    <a href="projects.html">PROJECTS</a>
+                    <a href="contacts-main.html">CONTACTS</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="hero">
+        <div class="tagline-frame-left">
+            <span class="tagline">"Clean Code Starts Here"</span>
+        </div>
+
+        <!-- Slides container: Home only; About/Projects/Contacts live on their own pages -->
+        <div class="slides">
+            <section class="slide slide-home" aria-label="Home slide">
+                <div class="hero-absolute-left">
+                    <div class="hero-text-content">
+                        <h1 class="name-display">Hi! Ivy Here!</h1>
+                        <div class="role-container-right">
+                            <h2 class="role-subtitle">Full-Stack Web Developer</h2>
+                        </div>
+                        <p class="bio-text">
+                            I'm a web developer focused on building modern, responsive, and user-friendly applications. 
+                            I work with both front-end and back-end technologies to create seamless digital experiences.
+                        </p>
+                        <div class="hero-btns">
+                            <a class="btn-contact" href="contacts-main.html">Contact Us</a>
+                            <a class="btn-learn" href="projects.html">View Projects</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-bar">
+            <span class="footer-brand">redline</span>
+            <span class="footer-date">2026-2027</span>
+        </div>
+</footer>
+
+</body>
+</html>

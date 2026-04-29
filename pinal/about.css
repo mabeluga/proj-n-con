@@ -1,0 +1,62 @@
+/* --- ABOUT PAGE FIX --- */
+body.about-page {
+    /* Solid, warm dark background to match the design reference */
+    background: linear-gradient(#3b2418, #2b1712) !important;
+    background-image: none !important;
+}
+
+/* THE CONE IMAGE */
+.cone-container {
+    position: absolute;
+    left: 0;
+    top: 100px;
+    bottom: 100px;
+    /* increase width so the cone tip reaches past center (about half page) */
+    width: 55%;
+    z-index: 1;
+    /* This creates the triangle pointing middle-right */
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+    overflow: hidden;
+}
+
+.cone-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-layout {
+    margin-left: auto;
+    /* reduce width so content fits to the right of the expanded cone */
+    width: 45%;
+    /* create a solid/dark background for the right side area (sits after the left cone) */
+    background: linear-gradient(#3b2418, #2b1712);
+    padding: 60px 5% 60px 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 22px;
+    align-items: stretch;
+    height: calc(100vh - 200px);
+    position: relative;
+    z-index: 2;
+}
+
+.dark-text { color: rgba(255,255,255,0.92) !important; }
+
+/* Make the hero content panels darker and glassy so text sits on top */
+.about-page .hero-text-content {
+    background: rgba(8,8,8,0.58);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255,255,255,0.06);
+    padding: 28px 36px;
+    border-radius: 22px;
+    color: rgba(255,255,255,0.95);
+}
+
+.about-page .hero-text-content h1,
+.about-page .hero-text-content h2,
+.about-page .hero-text-content p { color: rgba(255,255,255,0.95); }
+
+/* Move slider to About Me position */
+body.about-page .nav-selection-slider { transform: translateX(100%); }

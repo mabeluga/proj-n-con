@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact | Ivy</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        .nav-selection-slider { transform: translateX(300%); }
+        label[onclick*="contacts.html"] { color: #fff !important; }
+        
+        .contact-box { display: flex; gap: 40px; margin-top: 30px; }
+        .contact-details { flex: 1; }
+        .contact-form { flex: 1.5; display: flex; flex-direction: column; gap: 15px; }
+        input, textarea {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.2);
+            padding: 15px; border-radius: 15px; color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-content">
+            <div class="logo-container"><img src="assets/logo.png" class="brand-logo"></div>
+            <nav class="control-panel-pill">
+                <div class="nav-selection-slider"></div>
+                <label onclick="location.href='index.html'">HOME</label>
+                <label onclick="location.href='about.html'">ABOUT ME</label>
+                <label onclick="location.href='projects.html'">PROJECTS</label>
+                <label onclick="location.href='contacts.html'">CONTACTS</label>
+            </nav>
+        </div>
+    </header>
+
+    <main class="hero">
+        <div class="hero-absolute-left">
+            <div class="hero-text-content">
+                <h1 class="name-display">Contact</h1>
+                <div class="contact-box">
+                    <div class="contact-details">
+                        <p class="bio-text">
+                            <strong>Email:</strong> princessivyfetizanan@gmail.com [cite: 122]<br>
+                            <strong>Phone:</strong> 0992-980-6798 [cite: 117]<br>
+                            <strong>LinkedIn:</strong> ivyfetizanan [cite: 119]
+                        </p>
+                    </div>
+                    <form class="contact-form">
+                        <input type="text" placeholder="Name">
+                        <input type="email" placeholder="Email">
+                        <textarea placeholder="Message" rows="4"></textarea>
+                        <button type="button" class="btn-contact">Submit [cite: 125]</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
