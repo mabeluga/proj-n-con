@@ -1,8 +1,10 @@
 /* --- ABOUT PAGE FIX --- */
 body.about-page {
-    /* Solid, warm dark background to match the design reference */
-    background: linear-gradient(#3b2418, #2b1712) !important;
-    background-image: none !important;
+    background:
+      linear-gradient(180deg, #5d351f 0%, #3f1f11 40%, #241108 100%),
+      url('assets/school.png') center left/180% auto no-repeat fixed;
+    color: #f3e8dd;
+    min-height: 100vh;
 }
 
 /* THE CONE IMAGE */
@@ -27,31 +29,31 @@ body.about-page {
 
 .about-layout {
     margin-left: auto;
-    /* reduce width so content fits to the right of the expanded cone */
-    width: 45%;
-    /* create a solid/dark background for the right side area (sits after the left cone) */
-    background: linear-gradient(#3b2418, #2b1712);
-    padding: 60px 5% 60px 5%;
+    width: 62%;
+    background: rgba(79, 47, 31, 0.65);
+    padding: 80px 5% 60px 5%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 22px;
     align-items: stretch;
-    height: calc(100vh - 200px);
+    min-height: calc(100vh - 180px);
     position: relative;
     z-index: 2;
+    margin-top: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 24px 70px rgba(0, 0, 0, 0.35);
 }
 
 .dark-text { color: rgba(255,255,255,0.92) !important; }
 
 /* Make the hero content panels darker and glassy so text sits on top */
 .about-page .hero-text-content {
-    background: rgba(8,8,8,0.58);
-    backdrop-filter: blur(8px);
-    border: 1px solid rgba(255,255,255,0.06);
-    padding: 28px 36px;
-    border-radius: 22px;
-    color: rgba(255,255,255,0.95);
+    background: rgba(95, 58, 39, 0.55);
+    border: 1px solid rgba(255,255,255,0.08);
+    padding: 36px 42px;
+    border-radius: 28px;
+    color: rgba(255,255,255,0.96);
 }
 
 .about-page .hero-text-content h1,
